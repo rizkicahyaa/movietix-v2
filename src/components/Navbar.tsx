@@ -2,7 +2,7 @@ import { Film, Ticket, User } from "lucide-react";
 
 export default function Navbar() {
     return (
-        <nav className="w-full bg-slate-900 text-white shadow-md">
+        <nav className="w-full bg-slate-900 text-white shadow-md sticky top-0 z-50">
             <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
                 <div className="flex items-center gap-2">
                     <Film className="w-6 h-6" />

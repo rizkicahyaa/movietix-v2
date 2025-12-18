@@ -13,7 +13,6 @@ export default function Navbar() {
                     <li className="hover:text-emerald-400 cursor-pointer transition">Beranda</li>
                     <li className="hover:text-emerald-400 cursor-pointer transition">Daftar Film</li>
                     <li className="hover:text-emerald-400 cursor-pointer transition">Pemesanan</li>
-                    <li className="hover:text-emerald-400 cursor-pointer transition">Tiket Saya</li>
                 </ul>
 
                 <button className="flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 px-4 py-2 rounded-xl text-sm font-semibold transition">

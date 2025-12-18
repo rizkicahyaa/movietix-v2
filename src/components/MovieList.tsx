@@ -1,0 +1,60 @@
+import { Star } from "lucide-react";
+
+const movies = [
+    {
+        id: 1,
+        title: "Avengers: Endgame",
+        poster: "/poster1.jpg",
+        rating: 4.8,
+        duration: "181 menit",
+    },
+    {
+        id: 2,
+        title: "Interstellar",
+        poster: "/poster2.jpg",
+        rating: 4.7,
+        duration: "169 menit",
+    },
+    {
+        id: 3,
+        title: "Spider-Man: No Way Home",
+        poster: "/poster3.jpg",
+        rating: 4.6,
+        duration: "148 menit",
+    },
+];
+
+export default function MovieList() {
+    return (
+        <section className="bg-slate-100 py-20">
+            <div className="max-w-7xl mx-auto px-6">
+                <div className="mb-12">
+                    <h2 className="text-3xl font-bold text-slate-900 mb-2">Daftar Film</h2>
+                    <p className="text-slate-600">Pilih film favorit Anda yang sedang tayang di bioskop</p>
+                </div>
+
+                <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+                    {movies.map((movie) => (
+                        <div key={movie.id} className="bg-white rounded-3xl shadow hover:shadow-xl transition overflow-hidden">
+                            <img src={movie.poster} alt={movie.title} className="w-full h-[320px] object-cover" />
+
+                            <div className="p-6">
+                                <h3 className="text-lg font-semibold text-slate-900 mb-2">{movie.title}</h3>
+
+                                <div className="flex items-center justify-between text-sm text-slate-600 mb-4">
+                                    <div className="flex items-center gap-1">
+                                        <Star className="w-4 h-4 text-yellow-400" />
+                                        <span>{movie.rating}</span>
+                                    </div>
+                                    <span>{movie.duration}</span>
+                                </div>
+
+                                <button className="w-full bg-emerald-500 hover:bg-emerald-600 text-white py-2.5 rounded-xl font-semibold transition">Pesan Tiket</button>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </section>
+    );
+}

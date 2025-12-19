@@ -52,6 +52,7 @@ export default function Booking() {
                             <option value="Avengers: Endgame">Avengers: Endgame</option>
                             <option value="Interstellar">Interstellar</option>
                             <option value="Spider-Man: No Way Home">Spider-Man: No Way Home</option>
+                            <option value="Demon Slayer: Kimetsu No Yaiba The Movie: Infinity Castle">Demon Slayer: Kimetsu No Yaiba The Movie: Infinity Castle</option>
                         </select>
                     </div>
 

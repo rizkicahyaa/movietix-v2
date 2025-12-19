@@ -47,7 +47,7 @@ export default function MovieList() {
                             <img src={movie.poster} alt={movie.title} className="w-full h-[380px] object-cover" />
 
                             <div className="p-5 flex flex-col flex-1">
-                                <h3 className="text-lg font-semibold text-slate-900 mb-2">{movie.title}</h3>
+                                <h3 className="text-lg font-semibold text-slate-900 mb-2 line-clamp-2">{movie.title}</h3>
 
                                 <div className="flex items-center justify-between text-sm text-slate-600 mb-4">
                                     <div className="flex items-center gap-1">

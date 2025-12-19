@@ -27,7 +27,7 @@ const movies = [
 
 export default function MovieList() {
     return (
-        <section className="bg-slate-100 py-20">
+        <section id="movies" className="bg-slate-100 py-20">
             <div className="max-w-7xl mx-auto px-6">
                 <div className="mb-12">
                     <h2 className="text-3xl font-bold text-slate-900 mb-2">Daftar Film</h2>

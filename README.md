@@ -1,73 +1,52 @@
-# React + TypeScript + Vite
+# MovieTix – Cinema Ticket Booking
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+MovieTix adalah aplikasi **frontend pemesanan tiket bioskop** yang dibangun menggunakan **React, Tailwind CSS, dan React Router**. Aplikasi ini menampilkan daftar film, halaman pemesanan tiket, serta halaman detail tiket setelah booking.
 
-Currently, two official plugins are available:
+Project ini cocok untuk:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-   Mini project frontend
+-   Portfolio React
+-   Latihan routing & state antar halaman
 
-## React Compiler
+## Fitur Utama
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+-   Navbar sticky + responsive (hamburger menu di mobile)
+-   Daftar film dengan card rapi & sejajar
+-   Form pemesanan tiket
+-   Halaman detail tiket
+-   Navigasi halaman menggunakan React Router
+-   UI modern dengan Tailwind CSS
 
-## Expanding the ESLint configuration
+## Teknologi yang Digunakan
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+-   **React**
+-   **Vite**
+-   **Tailwind CSS**
+-   **React Router DOM**
+-   **Lucide React (icon)**
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Cara Menjalankan Project
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+1. Clone repository
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+git clone https://github.com/username/movietix-v2.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. Masuk ke folder project
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```bash
+cd movietix-v2
+```
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+3. Install dependency
+
+```bash
+npm install
+```
+
+4. Jalankan development server
+
+```bash
+npm run dev
 ```

@@ -1,4 +1,5 @@
 import { Star } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const movies = [
     {
@@ -49,7 +50,9 @@ export default function MovieList() {
                                     <span>{movie.duration}</span>
                                 </div>
 
-                                <button className="mt-auto w-full bg-emerald-500 hover:bg-emerald-600 text-white py-2.5 rounded-xl font-semibold transition">Pesan Tiket</button>
+                                <Link to="/booking" state={{ movie: movie.title }} className="mt-auto w-full text-center bg-emerald-500 hover:bg-emerald-600 text-white py-2.5 rounded-xl font-semibold transition">
+                                    Pesan Tiket
+                                </Link>
                             </div>
                         </div>
                     ))}

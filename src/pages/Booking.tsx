@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 export default function Booking() {
     interface BookingForm {
@@ -10,9 +11,11 @@ export default function Booking() {
         seats: number;
     }
 
-    const [form, setForm] = useState<BookingForm>({
+    const location = useLocation();
+
+    const [form, setForm] = useState({
         name: "",
-        movie: "",
+        movie: location.state?.movie || "",
         date: "",
         time: "",
         seats: 1,

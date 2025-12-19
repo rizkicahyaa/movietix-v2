@@ -23,6 +23,13 @@ const movies = [
         rating: 4.6,
         duration: "148 menit",
     },
+    {
+        id: 4,
+        title: "Demon Slayer: Kimetsu No Yaiba The Movie: Infinity Castle",
+        poster: "/demon-slayer-movie.jpg",
+        rating: 4.8,
+        duration: "156 menit",
+    },
 ];
 
 export default function MovieList() {

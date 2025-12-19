@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function BookingPage() {
+export default function Booking() {
     interface BookingForm {
         name: string;
         movie: string;

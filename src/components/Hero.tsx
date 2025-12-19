@@ -1,4 +1,5 @@
 import { PlayCircle } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
     return (
@@ -14,7 +15,10 @@ export default function Hero() {
                     <p className="text-slate-300 mb-8 max-w-lg">Temukan film favorit Anda, pilih jadwal terbaik, dan dapatkan tiket bioskop secara instan tanpa antre.</p>
 
                     <div className="flex flex-wrap items-center gap-4">
-                        <button className="bg-emerald-500 hover:bg-emerald-600 px-6 py-3 rounded-2xl font-semibold transition">Pesan Sekarang</button>
+                        <Link to="/booking" className="inline-block bg-emerald-500 hover:bg-emerald-600 px-6 py-3 rounded-2xl font-semibold transition">
+                            Pesan Sekarang
+                        </Link>
+
                         <button className="flex items-center gap-2 border border-slate-500 hover:border-emerald-400 px-6 py-3 rounded-2xl font-medium transition">
                             <PlayCircle className="w-5 h-5" />
                             Lihat Trailer

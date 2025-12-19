@@ -44,7 +44,7 @@ export default function MovieList() {
                 <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                     {movies.map((movie) => (
                         <div key={movie.id} className="bg-white rounded-3xl shadow hover:shadow-xl transition overflow-hidden h-[560px] flex flex-col">
-                            <img src={movie.poster} alt={movie.title} className="w-full h-[380px] object-cover" />
+                            <img src={movie.poster} alt={movie.title} className="w-full h-[360px] object-cover" />
 
                             <div className="p-5 flex flex-col flex-1">
                                 <h3 className="text-lg font-semibold text-slate-900 mb-2 line-clamp-2">{movie.title}</h3>

@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import MovieList from "./components/MovieList";
 import Booking from "./pages/Booking";
+import DetailTicket from "./pages/DetailTicket";
 import Footer from "./components/Footer";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
                     }
                 />
                 <Route path="/booking" element={<Booking />} />
+                <Route path="/ticket" element={<DetailTicket />} />
             </Routes>
 
             <Footer />

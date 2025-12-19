@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Booking() {
     interface BookingForm {
@@ -17,6 +18,8 @@ export default function Booking() {
         seats: 1,
     });
 
+    const navigate = useNavigate();
+
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
         const { name, value } = e.target;
         setForm({ ...form, [name]: value });
@@ -24,7 +27,7 @@ export default function Booking() {
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        alert("Tiket berhasil dipesan!");
+        navigate("/ticket", { state: form });
     };
 
     return (

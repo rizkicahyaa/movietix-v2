@@ -8,19 +8,10 @@ Project ini cocok untuk:
 -   Portfolio React
 -   Latihan routing & state antar halaman
 
-## Fitur Utama
-
--   Navbar sticky + responsive (hamburger menu di mobile)
--   Daftar film dengan card rapi & sejajar
--   Form pemesanan tiket
--   Halaman detail tiket
--   Navigasi halaman menggunakan React Router
--   UI modern dengan Tailwind CSS
-
 ## Teknologi yang Digunakan
 
--   **React**
 -   **Vite**
+-   **React**
 -   **Tailwind CSS**
 -   **React Router DOM**
 -   **Lucide React (icon)**
@@ -30,7 +21,7 @@ Project ini cocok untuk:
 1. Clone repository
 
 ```bash
-git clone https://github.com/username/movietix-v2.git
+git clone https://github.com/rizkicahyaa/movietix-v2.git
 ```
 
 2. Masuk ke folder project

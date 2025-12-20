@@ -3,13 +3,13 @@ import { useNavigate } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 
 export default function Booking() {
-    interface BookingForm {
-        name: string;
-        movie: string;
-        date: string;
-        time: string;
-        seats: number;
-    }
+    // interface BookingForm {
+    //     name: string;
+    //     movie: string;
+    //     date: string;
+    //     time: string;
+    //     seats: number;
+    // }
 
     const location = useLocation();
 
